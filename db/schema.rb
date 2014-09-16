@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140916110153) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "best_seller_lists", force: true do |t|
     t.string   "display_name"
     t.string   "encoded_name"

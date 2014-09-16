@@ -84,8 +84,8 @@ GEM
     mime-types (2.3)
     minitest (5.4.1)
     multi_json (1.10.1)
-    mysql2 (0.3.16)
     netrc (0.7.7)
+    pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     rack (1.5.2)
@@ -166,7 +166,7 @@ DEPENDENCIES
   jquery-datatables-rails (= 1.12.2)
   jquery-rails
   less-rails
-  mysql2
+  pg
   rails (= 4.1.6)
   rails-i18n
   ransack!
