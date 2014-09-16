@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   namespace(:api, :path => '/api/:api_version/') do
 
-    resources :companies, :only => [:index] do
+    resources :companies, :only => [:index, :create, :update] do
 
     end
 
