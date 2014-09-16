@@ -20,4 +20,43 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  show:       "Show"
+  edit:       "Edit"
+  update:     "Update"
+  save:       "Save"
+  cancel:     "Cancel"
+  new:        "New"
+  delete:     "Delete"
+
+  contact_info: "Contact info"
+  other:        "Other"
+
+  layouts:
+    header:
+      functions:        "Functions"
+      companies:        "Companies"
+
+  companies:
+    index:
+      new_company:      "New company"
+
+  activerecord:
+    models:
+      company:          "Company"
+    attributes:
+      company:
+        name:           "Name"
+        company_type:   "Type"
+        address:        "Address"
+        zip:            "Zip"
+        city:           "City"
+        state_abbr:     "State"
+        website:        "Website"
+        email:          "Email"
+        phone:          "Phone"
+        duns_number:    "DUNS number"
+        info:           "Info"
+
+  date:
+    formats:
+      default: "%m/%d/%Y"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916074924) do
+ActiveRecord::Schema.define(version: 20140916103308) do
 
   create_table "companies", force: true do |t|
     t.string   "name",            limit: 100,                          null: false
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20140916074924) do
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_fi",    limit: 50
+    t.string   "name_sv",    limit: 50
   end
 
 end

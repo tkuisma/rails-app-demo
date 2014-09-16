@@ -1,0 +1,15 @@
+sv:
+  helpers:
+    actions: "Funktioner"
+    links:
+      back: "Tillbaka"
+      cancel: "Avbryt"
+      confirm: "Är du säker?"
+      destroy: "Radera"
+      new: "Ny"
+      edit: "Redigera"
+    titles:
+      edit: "Redigera %{model}"
+      save: "Spara %{model}"
+      new: "Ny %{model}"
+      delete: "Radera %{model}"

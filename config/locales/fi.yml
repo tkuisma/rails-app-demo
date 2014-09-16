@@ -1,0 +1,48 @@
+fi:
+  show:       "Näytä"
+  edit:       "Muokkaa"
+  update:     "Päivitä"
+  save:       "Tallenna"
+  cancel:     "Peruuta"
+  new:        "Uusi"
+  delete:     "Poista"
+
+  contact_info: "Yhteystiedot"
+  other:        "Muuta"
+
+  layouts:
+    header:
+      functions:        "Toiminnot"
+      companies:        "Yritykset"
+
+  companies:
+    index:
+      new_company:      "Uusi yritys"
+
+  activerecord:
+    models:
+      company:          "Yritys"
+    attributes:
+      company:
+        name:           "Nimi"
+        company_type:   "Tyyppi"
+        address:        "Osoite"
+        zip:            "Postinumero"
+        city:           "Kaupunki"
+        state_abbr:     "Osavaltio"
+        website:        "WWW-osoite"
+        email:          "Sähköposti"
+        phone:          "Puhelin"
+        duns_number:    "DUNS numero"
+        info:           "Lisätietoa"
+
+  # Default error messages
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} %{message}"
+    messages:
+      blank: "on pakollinen"
+
+  date:
+    formats:
+      default: "%d.%m.%Y"

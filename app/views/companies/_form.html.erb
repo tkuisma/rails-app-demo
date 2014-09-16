@@ -35,7 +35,7 @@
         </div>
     <% end %>
 
-    <%= f.button :submit, 'Save' %>
+    <%= f.button :submit, t(:save) %>
     <%= link_to t(:cancel), @company.new_record? ? companies_path : company_path(@company), :class => 'btn btn-default' %>
 
 <% end %>

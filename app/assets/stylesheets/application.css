@@ -15,4 +15,5 @@
  *= require dataTables/jquery.dataTables.bootstrap3
  *= require datatables
  *= require app_styles
+ *= require flags
  */

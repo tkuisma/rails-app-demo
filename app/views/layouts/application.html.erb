@@ -40,6 +40,13 @@
         </li>
       </ul>
 
+      <ul class="nav navbar-nav pull-right">
+        <li class='flags-container'>
+          <%= link_to url_for(:locale => "fi") do %><%= image_tag 'blank.gif', :class => 'flag flag-fi', :alt => 'Suomi' %><% end %>
+          <%= link_to url_for(:locale => "sv") do %><%= image_tag 'blank.gif', :class => 'flag flag-sv', :alt => 'Svenska' %><% end %>
+          <%= link_to url_for(:locale => "en") do %><%= image_tag 'blank.gif', :class => 'flag flag-en', :alt => 'English' %><% end %>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

@@ -1,0 +1,48 @@
+sv:
+  show:       "Visa"
+  edit:       "Redigera"
+  update:     "Uppdatera"
+  save:       "Spara"
+  cancel:     "Avbryt"
+  new:        "Ny"
+  delete:     "Radera"
+
+  contact_info: "Kontakt"
+  other:        "Andra information"
+
+  layouts:
+    header:
+      functions:        "Funktioner"
+      companies:        "Företag"
+
+  companies:
+    index:
+      new_company:      "Ny företag"
+
+  activerecord:
+    models:
+      company:          "Företag"
+    attributes:
+      company:
+        name:           "Namn"
+        company_type:   "Typ"
+        address:        "Adress"
+        zip:            "Postnummer"
+        city:           "Stad"
+        state_abbr:     "Stat"
+        website:        "Hemsida"
+        email:          "Email"
+        phone:          "Telefun"
+        duns_number:    "DUNS nummer"
+        info:           "Info"
+
+  # Default error messages
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} %{message}"
+    messages:
+      blank:              "är obligatorisk"
+
+  date:
+    formats:
+      default: "%d.%m.%Y"

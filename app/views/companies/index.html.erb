@@ -1,14 +1,16 @@
 <table id="companies-datatable" class="table table-striped table-hover table-bordered" data-source="<%= companies_url(format: "json") %>">
   <thead>
   <tr>
-    <th class='index_column' data-class='expand'>Name</th>
-    <th>Address</th>
-    <th>Zip</th>
-    <th>City</th>
-    <th>Website</th>
+    <th class='index_column' data-class='expand'><%= (t :name) %></th>
+    <th><%= t 'activerecord.attributes.company.address' %></th>
+    <th><%= t 'activerecord.attributes.company.zip' %></th>
+    <th><%= t 'activerecord.attributes.company.city' %></th>
+    <th><%= t 'activerecord.attributes.company.website' %></th>
   </tr>
   </thead>
   <tbody>
 
   </tbody>
 </table>
+
+<%= link_to t('companies.index.new_company'), new_company_path, :class => 'btn btn-default' %>

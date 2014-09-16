@@ -1,0 +1,15 @@
+fi:
+  helpers:
+    actions: "Toiminnot"
+    links:
+      back: "Takaisin"
+      cancel: "Peruuta"
+      confirm: "Oletko varma?"
+      destroy: "Poista"
+      new: "Uusi"
+      edit: "Muokkaa"
+    titles:
+      edit: "Muokkaa %{model}"
+      save: "Tallenna %{model}"
+      new: "Uusi %{model}"
+      delete: "Poista %{model}"
