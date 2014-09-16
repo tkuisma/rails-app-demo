@@ -4,4 +4,8 @@ class CompanyType < ActiveRecord::Base
 
   validates_presence_of :name_en, :sort_order
 
+  def to_s
+    name_en
+  end
+
 end

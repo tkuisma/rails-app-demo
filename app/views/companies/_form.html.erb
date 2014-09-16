@@ -1,0 +1,41 @@
+<%= simple_form_for @company, :html => {:class => 'form-horizontal'}, :wrapper => :bootstrap3_horizontal do |f| %>
+    <%= render :layout => 'shared/panel', :locals => {:title => (t 'activerecord.models.company')} do %>
+        <div class='row'>
+          <div class='col-md-5'>
+            <%= f.input :name %>
+          </div>
+          <div class='col-md-5'>
+            <%= f.association :company_type %>
+          </div>
+        </div>
+    <% end %>
+
+    <%= render :layout => 'shared/panel', :locals => {:title => (t :contact_info)} do %>
+        <div class='row'>
+          <div class='col-md-5'>
+            <%= f.input :address %>
+            <%= f.input :zip %>
+            <%= f.input :city %>
+            <%= f.input :state_abbr %>
+          </div>
+          <div class='col-md-5'>
+            <%= f.input :website %>
+            <%= f.input :email %>
+            <%= f.input :phone %>
+            <%= f.input :duns_number %>
+          </div>
+        </div>
+    <% end %>
+
+    <%= render :layout => 'shared/panel', :locals => {:title => (t :other)} do %>
+        <div class='row'>
+          <div class='col-md-12 full_width'>
+            <%= f.input :info, :input_html => {:rows => 6} %>
+          </div>
+        </div>
+    <% end %>
+
+    <%= f.button :submit, 'Save' %>
+    <%= link_to t(:cancel), @company.new_record? ? companies_path : company_path(@company), :class => 'btn btn-default' %>
+
+<% end %>

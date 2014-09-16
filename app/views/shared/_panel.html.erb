@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <% unless title.blank? %>
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= title %></h3>
+      </div>
+  <% end %>
+  <div class="panel-body">
+    <%= yield %>
+  </div>
+</div>

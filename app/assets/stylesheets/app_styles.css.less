@@ -5,3 +5,65 @@ div.container.main_content {
 .stashed {
   display: none;
 }
+
+.form-horizontal {
+
+  .control-label {
+    padding-top: 12px;
+    padding-right: 0;
+    clear: both;
+  }
+
+}
+
+.simple_form.form-horizontal, .simple_form.form-horizontal {
+
+  .control-label {
+    padding-top: 6px;
+  }
+
+}
+
+// For Bootstrap 3 migration
+
+div.form-control, a.form-control {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding-left: 0;
+  height: auto;
+  min-height: 30px;
+}
+
+.form-horizontal .col-md-12.full_width {
+  // col-sm-4 -> col-sm-2
+  // col-sm-8 -> col-sm-10
+  .col-sm-4 {
+    width: 14%;
+  }
+  .col-sm-8 {
+    width: 86%;
+  }
+
+  .col-sm-2 {
+    width: 13.333%;
+  }
+  .col-sm-10 {
+    width: 86.666%;
+  }
+}
+
+.form-horizontal .col-md-12.full_width.wide {
+  .col-sm-4 {
+    width: 16.666%;
+  }
+  .col-sm-8 {
+    width: 83.333%;
+  }
+}
+
+// To make show views tighter
+div.form-horizontal label.input_value, div.form-horizontal div.input_value div.form-control {
+  padding-top: 0;
+  padding-bottom: 0;
+}

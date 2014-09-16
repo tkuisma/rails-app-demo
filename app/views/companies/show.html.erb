@@ -1,0 +1,41 @@
+<div class='form-horizontal'>
+  <%= render :layout => 'shared/panel', :locals => {:title => (t 'activerecord.models.company')} do %>
+      <div class='row'>
+        <div class='col-md-5'>
+          <%= field_formatter(:name, @company) %>
+        </div>
+        <div class='col-md-5'>
+          <%= field_formatter(:company_type, @company) %>
+        </div>
+      </div>
+  <% end %>
+
+  <%= render :layout => 'shared/panel', :locals => {:title => (t :contact_info)} do %>
+      <div class='row'>
+        <div class='col-md-5'>
+          <%= google_maps_link_formatter(:address, @company) %>
+          <%= field_formatter(:zip, @company) %>
+          <%= field_formatter(:city, @company) %>
+          <%= field_formatter(:state_abbr, @company) %>
+        </div>
+
+        <div class='col-md-5'>
+          <%= external_link_formatter(:website, @company, @company.website, 'ensure_prefix_in_url') %>
+          <%= mail_formatter(:email, @company) %>
+          <%= tel_formatter(:phone, @company, 'phone') %>
+          <%= field_formatter(:duns_number, @company) %>
+        </div>
+      </div>
+  <% end %>
+
+  <%= render :layout => 'shared/panel', :locals => {:title => (t :other)} do %>
+      <div class='row'>
+        <div class='col-md-5'>
+          <%= field_formatter(:info, @company, true, false, false) %>
+        </div>
+      </div>
+  <% end %>
+
+  <%= link_to t(:edit), edit_company_path(@company), :class => 'btn btn-default' %>
+
+</div>

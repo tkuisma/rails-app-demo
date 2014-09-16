@@ -13,7 +13,7 @@ class CompaniesDatatable < BaseDatatable
   def data
     companies.map do |company|
       array = []
-      array << company.name
+      array << link_to(company.name, company)
       array << company.address
       array << company.zip
       array << company.city

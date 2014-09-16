@@ -19,6 +19,8 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem 'will_paginate-bootstrap'
 
+gem 'simple_form', git: 'git://github.com/plataformatec/simple_form.git', :ref => '3805d187'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
