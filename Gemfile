@@ -58,3 +58,8 @@ gem 'rest_client'
 
 # Development data creation
 gem 'faker'
+
+# Deployment to Heroku
+gem 'rails_12factor', group: :production
+
+ruby "2.1.2"
