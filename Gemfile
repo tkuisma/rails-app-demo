@@ -17,6 +17,7 @@ gem 'therubyracer', '0.11.3', platforms: :ruby
 # Twitter Bootstrap
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+gem 'will_paginate-bootstrap'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -26,6 +27,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+# Datatables for table views
+gem 'jquery-datatables-rails', '1.12.2'
+
+# Object-based searching
+gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4.1"
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development

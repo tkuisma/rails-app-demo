@@ -1,0 +1,32 @@
+@import (reference) "bootstrap_and_overrides.css.less";
+
+.dataTables_processing, .centered-ajax-loader {
+    z-index: 1100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #333;
+    background-color: rgba(0,0,0,0.7);
+    background-image: url(<%= asset_path 'ajax-loader.gif' %>);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 50px;
+    color: #dddddd;
+    .text {
+        position: relative;
+        padding-bottom: 0px;
+        top: 36px;
+        left: 0;
+        width: 200px;
+        text-align: center;
+    }
+}
+
+.centered-ajax-loader.has_text {
+    margin-left: -150px;
+}

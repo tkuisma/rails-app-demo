@@ -22,6 +22,20 @@
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li class='dropdown'>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class='fa fa-search'></i>
+            <%= t 'layouts.header.functions' %>
+            <b class="caret"></b>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to companies_path do %>
+                  <i class='fa fa-building-o'></i>
+                  <%= t 'layouts.header.companies' %>
+              <% end %>
+            </li>
+          </ul>
 
         </li>
       </ul>
@@ -33,6 +47,9 @@
 <div class="container main_content">
   <%= yield %>
 </div>
+
+<!-- This is needed for I18n -->
+<span id="current-language" class="stashed"><%= I18n.locale.to_s %></span>
 
 </body>
 </html>
