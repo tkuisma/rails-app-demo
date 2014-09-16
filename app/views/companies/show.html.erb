@@ -31,6 +31,14 @@
   <%= render :layout => 'shared/panel', :locals => {:title => (t :other)} do %>
       <div class='row'>
         <div class='col-md-5'>
+          <%= field_formatter(:credit_rating, @company) %>
+        </div>
+        <div class='col-md-5'>
+          <%= date_formatter(:credit_rating_checked, @company) %>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-5'>
           <%= field_formatter(:info, @company, true, false, false) %>
         </div>
       </div>

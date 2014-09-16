@@ -35,6 +35,8 @@ sv:
         phone:          "Telefun"
         duns_number:    "DUNS nummer"
         info:           "Info"
+        credit_rating:          "Kreditvärdighet"
+        credit_rating_checked:  "Kontrolleras"
 
   # Default error messages
   errors:

@@ -56,6 +56,8 @@ en:
         phone:          "Phone"
         duns_number:    "DUNS number"
         info:           "Info"
+        credit_rating:          "Credit rating"
+        credit_rating_checked:  "Credit checked"
 
   date:
     formats:

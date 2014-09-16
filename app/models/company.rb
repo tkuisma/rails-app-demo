@@ -31,4 +31,8 @@ class Company < ActiveRecord::Base
     puts "\nDone."
   end
 
+  def self.credit_ratings
+    ['AAA','AA+','AA','AA-','A+','A','A-','BBB','BB+','BB','BB-','B+','B','B-','CCC']
+  end
+
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916103308) do
+ActiveRecord::Schema.define(version: 20140916104144) do
 
   create_table "companies", force: true do |t|
     t.string   "name",            limit: 100,                          null: false
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20140916103308) do
     t.text     "info"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "credit_rating",   limit: 3
+    t.date     "credit_rating_checked"
   end
 
   create_table "company_types", force: true do |t|

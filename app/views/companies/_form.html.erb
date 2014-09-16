@@ -29,6 +29,14 @@
 
     <%= render :layout => 'shared/panel', :locals => {:title => (t :other)} do %>
         <div class='row'>
+          <div class='col-md-5'>
+            <%= f.input :credit_rating, :collection => Company.credit_ratings %>
+          </div>
+          <div class='col-md-5'>
+            <%= f.input :credit_rating_checked %>
+          </div>
+        </div>
+        <div class='row'>
           <div class='col-md-12 full_width'>
             <%= f.input :info, :input_html => {:rows => 6} %>
           </div>

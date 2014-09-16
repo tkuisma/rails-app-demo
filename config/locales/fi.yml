@@ -35,6 +35,8 @@ fi:
         phone:          "Puhelin"
         duns_number:    "DUNS numero"
         info:           "Lisätietoa"
+        credit_rating:          "Luottoluokitus"
+        credit_rating_checked:  "Tarkistuspäivä"
 
   # Default error messages
   errors:

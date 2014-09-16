@@ -36,6 +36,11 @@ module ApplicationHelper
     label_formatter(field, object, object.address) + value_formatter(google_maps_link(object.address, object.zip, object.city, print_only_address))
   end
 
+  def date_formatter(field, object)
+    value = object.send(field)
+    label_formatter(field, object, value) + value_formatter(value.blank? ? '' : l(value))
+  end
+
   def mail_formatter(field, object, extra_string = nil)
     value = object.send(field)
     label_formatter(field, object, value) + value_formatter(value.blank? ? '' : mailto_link(value) + extra_string)
