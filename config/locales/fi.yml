@@ -37,6 +37,16 @@ fi:
         info:           "Lisätietoa"
         credit_rating:          "Luottoluokitus"
         credit_rating_checked:  "Tarkistuspäivä"
+      best_sellers:
+        title:              "Otsikko"
+        best_seller_list:   "Kategoria"
+        description:        "Kuvaus"
+        author:             "Kirjailija"
+        publisher:          "Kustantaja"
+        primary_isbn13:     "ISBN"
+        primary_isbn10:     "ISBN (10)"
+        book_image:         "Kansikuva"
+        amazon_product_url: "Amazon"
 
   # Default error messages
   errors:

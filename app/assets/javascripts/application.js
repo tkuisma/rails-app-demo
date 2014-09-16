@@ -18,3 +18,4 @@
 //= require dataTables/jquery.dataTables.bootstrap3
 //= require datatable_functions
 //= require companies
+//= require best_sellers

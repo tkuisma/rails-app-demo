@@ -58,6 +58,16 @@ en:
         info:           "Info"
         credit_rating:          "Credit rating"
         credit_rating_checked:  "Credit checked"
+      best_sellers:
+        title:              "Title"
+        best_seller_list:   "Category"
+        description:        "Description"
+        author:             "Author"
+        publisher:          "Publisher"
+        primary_isbn13:     "ISBN"
+        primary_isbn10:     "ISBN (10)"
+        book_image:         "Cover"
+        amazon_product_url: "Amazon"
 
   date:
     formats:

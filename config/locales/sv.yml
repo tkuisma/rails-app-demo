@@ -37,6 +37,16 @@ sv:
         info:           "Info"
         credit_rating:          "Kreditvärdighet"
         credit_rating_checked:  "Kontrolleras"
+      best_sellers:
+        title:              "Titel"
+        best_seller_list:   "Kategori"
+        description:        "Beskrivning"
+        author:             "Författare"
+        publisher:          "Bokförläggare"
+        primary_isbn13:     "ISBN"
+        primary_isbn10:     "ISBN (10)"
+        book_image:         "Bokomslag"
+        amazon_product_url: "Amazon"
 
   # Default error messages
   errors:
