@@ -19,5 +19,9 @@
 .idea/*
 .idea
 
+# Ignore deployment ssh keys
+/containers/id_rsa
+/containers/id_rsa.pub
+
 # Other
 .DS_Store
