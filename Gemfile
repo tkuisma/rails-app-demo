@@ -42,7 +42,7 @@ gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4.1"
 gem 'spring',        group: :development
 
 # For REST interfaces
-gem 'rest_client'
+gem 'rest-client'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
